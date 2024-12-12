@@ -70,6 +70,7 @@ The confusion matrices for this test explicitly show the whole human model outpe
 
 
 |scGPT whole human model | scGPT lung model|
+|-------------------------|-------------------------|
 |Cluster Map|
 |![cluster_human_disease_id](https://github.com/user-attachments/assets/9f853b65-5f52-4e63-b124-dbfca5461d36)| ![cluster_lung_disease_id](https://github.com/user-attachments/assets/2d5a246c-248f-45c8-90ba-cede1412b844)|
 |![confusion_matrix_human_disease_id](https://github.com/user-attachments/assets/17f34970-e649-4aa1-a4fd-f1795305d2ea)| ![confusion_matrix_lung_disease_id](https://github.com/user-attachments/assets/497db3e1-9c04-43ba-9502-6edc67caa7d9)|
