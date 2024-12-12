@@ -13,6 +13,7 @@ We would further like to determine how specific cell identifiers impact the perf
 
 The "single-cell rna-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis" paper uses UMAPs for analysis of their data, the figure below is one example. This script aims to improve upon the previous methods used for cell classification including the methods used to determine classification here. Ideally, using scGPT will allow for scRNA-seq data to be given to the model and its classification determined, without the requirement of the researchers to annotate these data themselves.
 
+
 ![example image](https://github.com/user-attachments/assets/5d6f3f12-c044-4b27-be21-361d6066eff6)
 
 
