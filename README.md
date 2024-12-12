@@ -39,7 +39,8 @@ The confusion matrix again shows similar success for all cell types excluding Mu
 
 
 
-When the annotations were further specified to focus on cell type subclass, the possible classifications increased from 6 to 49. This makes interpretation of the cluster map difficult. As seen below the coloring is grey scale and time constraints did not allow for trouble shooting. However important information can be ascertained from the confusion matrices. Namely, again the whole human model did a better job overall identifying cell types this is concisely seen by the accuracy, precision, recall and macro f1 score of each type
+When the annotations were further specified to focus on cell type subclass, the possible classifications increased from 6 to 49. This makes interpretation of the cluster map difficult. As seen below the coloring is grey scale and time constraints did not allow for trouble shooting. However important information can be ascertained from the confusion matrices. Namely, again the whole human model did a better job overall identifying cell types this is concisely seen by the accuracy, precision, recall and macro f1 score of each model. The matrix shows further details explaining which cell types were identified with greater accuracy. This may be for a variety of reasons including the proportion of cells of each type the model was trained on. 
+
 | Metric | scGPT whole human model | scGPT lung model|
 |-------------------------|-------------------------|-------------------------|
 |accuracy| 0.7433132010353753 | ?|
@@ -47,12 +48,32 @@ When the annotations were further specified to focus on cell type subclass, the 
 |recall | 0.7250614699713483| ?|
 |macro f1| 0.7263983803368087 |?| 
 
+
 |scGPT whole human model | scGPT lung model|
 |-------------------------|-------------------------|
 |Cluster Map|
 |![human_umap_subclass](https://github.com/user-attachments/assets/fb0d7132-9de6-4349-86ca-e93714e2c10f) |![lung_umap_subclass](https://github.com/user-attachments/assets/cc955483-bb9d-4b5d-bf12-7a0ea2a25a0f)|
 | Confusion Matrix|
 | ![confusion_matrix_human_cell_subclass](https://github.com/user-attachments/assets/29914af9-16ad-413d-aa80-c4d0be7dce3e)|![confusion_matrix_lung_cell_subclass](https://github.com/user-attachments/assets/e85cc104-417f-41a1-bbfe-bd8a45fe30b4)|
+
+
+When the training data sent to the models was instead annotated with the cells' disease state (IPF, COPD or control), the human model again outperformed the lung model. The UMAP plots created do not give much infomation, the model still seems to cluster the cells by cell type, not disease state. However bands of similar disease state can be seen in the plots suggesting an up regulation of certain cell types in each disease state. Importantly, this again depends on the data presented to the model. It is unclear whether the data collected for the original study equally harvested cells between disease states from similar areas of the lungs. If this is not the case, the information from the UMAP plots might be misleading. 
+
+The confusion matrices for this test explicitly show the whole human model outperforming the lung model. This is also seen by the explicit accuracy, precision, recall and macro f1 scores of the models.
+
+| Metric | scGPT whole human model | scGPT lung model|
+|-------------------------|-------------------------|-------------------------|
+|accuracy| 0.0.7433132010353753, | 0.7127792157990605|
+|precision| 0.0.7306583316543472, | 0.6988279191653136|
+|recall | 0.0.7250614699713483,| 0.692754924917788|
+|macro f1| 0.0.7263983803368087 |0.6941320833645248| 
+
+
+|scGPT whole human model | scGPT lung model|
+|Cluster Map|
+|![cluster_human_disease_id](https://github.com/user-attachments/assets/9f853b65-5f52-4e63-b124-dbfca5461d36)| ![cluster_lung_disease_id](https://github.com/user-attachments/assets/2d5a246c-248f-45c8-90ba-cede1412b844)|
+|![confusion_matrix_human_disease_id](https://github.com/user-attachments/assets/17f34970-e649-4aa1-a4fd-f1795305d2ea)| ![confusion_matrix_lung_disease_id](https://github.com/user-attachments/assets/497db3e1-9c04-43ba-9502-6edc67caa7d9)|
+
 
 
 
