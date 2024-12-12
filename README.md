@@ -105,8 +105,15 @@ Interestingly, while the cell UMAP and confusion matrices differ the metrics for
 
 
 
+## Future Work
 
-Acknowledgments:
+Future work may include:
+- Fine tune scGPT model to improve predictions
+- Separate data by disease state to determine disease specific gene indicators for cell type differentiation 
+
+
+
+## Acknowledgments
 
 - bowang-lab. GitHub - bowang-lab/scGPT. GitHub. Published December 13, 2023. Accessed December 12, 2024. https://github.com/bowang-lab/scGPT
 - Adams TS, Schupp JC, Poli S, et al. Single-cell RNA-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis. Science Advances. 2020;6(28). doi:https://doi.org/10.1126/sciadv.aba1983
