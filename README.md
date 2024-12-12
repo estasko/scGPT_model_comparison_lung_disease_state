@@ -1,9 +1,9 @@
-# scGPT model comparison lung disease state
+# Application of scGPT models to identify cell types in lung disease states
 ## Introduction
 
-Cell clustering is commonly used for cell type identificaion. This algoritm reduces the dimensionality of the scRNA-seq data and can be visualized as culster maps dividing cells based on type. Traditional methods include algorithms such as seruat. This is widelt accepted however can be less effective in identifying complex relationships between genes and thus identifying aberant cell populations. This severly limits the application of cell culstering for studying disease state models. 
+Cell clustering is commonly used for cell type identification. This algorithm reduces the dimensionality of the scRNA-seq data and can be visualized as UMAP maps dividing cells based on type. Traditional methods include algorithms such as Seurat. This is widely accepted however can be less effective in identifying complex relationships between genes and thus identifying aberrant cell populations. This severely limits the application of cell clustering for studying disease state models. 
 
-To combat this, a new machine learning model, scGPT, has been developed by the Bowang Lab. Harnesing transfer learning concepts, scGPT uses scRNA-seq data for cell type identification and allows for more accurate identification of complex gene expression relationships. By creating a more sensitive model, the Bowang Lab has increased the potential applications of clustering. Using this model to identify abberant cell types in disease states based on their gene expression can help researches determine pathogenesis of idopathic diseases. 
+To combat this, a new machine learning model, scGPT, has been developed by the Bowang Lab. Harnessing transfer learning concepts, scGPT uses scRNA-seq data for cell type identification and allows for more accurate identification of complex gene expression relationships. By creating a more sensitive model, the Bowang Lab has increased the potential applications of clustering. Using this model to identify aberrant cell types in disease states based on their gene expression can help researches determine pathogenesis of idiopathic diseases. 
 
 Here, we compare the scGPT whole human model (pre-trained on 33 million cells) and lung model (pre-trained on 2.1 million cells). We aim to determine whether a generalized model or task specific model best identifies aberrant cell populations in IPF, COPD and control lung cell samples.
 
@@ -26,8 +26,9 @@ We would further like to determine how specific cell identifiers impact the perf
 
 Both the whole human and lung scGPT models were successful in identifying cell types. The most successful data set for both models was annotated with cell type. These annotations were less specific then the cell type subclass identity used and thus less relevant to the intended purpose of identifying abberant cell types. 
 
-Shown below are the UMAP clusters of the whole human and lung model for the cell type annotation and eaulation shows a similar distributon of cell types / clustering. 
-The confusion matrix again shows similar success for all cell types excluding Multiplet where the whole human model slightly outperformed the lung model.
+Shown below are the UMAP clusters of the whole human and lung model for the cell type annotation and evaluation shows a similar distribution of cell types / clustering. 
+The confusion matrix again shows similar success for all cell types excluding multiplet where the whole human model slightly outperformed the lung model.
+![image](https://github.com/user-attachments/assets/427eab6d-9a88-4789-b2d9-c45b9532e92f)
 
 | scGPT whole human model | scGPT lung model |
 |-------------------------|-------------------------|
