@@ -10,7 +10,7 @@ Here, we compare the scGPT whole human model (pre-trained on 33 million cells) a
 We would further like to determine how specific cell identifiers impact the performance of the model. The data file provided includes train and test file of the same dataset using different levels of cell classification and subclassification to test the limits of each model. Further, we use these models to determine the disease state of each cell based on its gene expression.
 
 
-
+## Methods
 *This script was derived from scGPT zero-shot reference mapping tutorial. Single Cell RNA sequencing data is analyzed from Kaminski et al. "Single-cell RNA-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis".*
 
 
@@ -21,3 +21,19 @@ We would further like to determine how specific cell identifiers impact the perf
  2. *Generate scGPT embeddings for each cell in reference and query datasets*
 
  3. *Transfer the annotations from reference to query dataset*
+
+
+## Results
+
+Both the whole human and lung scGPT models were successful in identifying cell types. The most successful data set for both models was annotated with cell type. These annotations were less specific then the cell type subclass identity used and thus less relevant to the intended purpose of identifying abberant cell types. 
+
+Shown below are the UMAP clusters of the whole human and lung model for the cell type annotation and eaulation shows a similar distributon of cell types / clustering. 
+
+
+
+The confusion matrix again shows similar success for all cell types excluding Multiplet where the whole human model slightly outperformed the lung model. This is shown below. 
+
+![human_umap_cell_name](https://github.com/user-attachments/assets/e99714d0-3317-4b80-8657-0768af2870e0)
+
+
+When the annotations were further specified to focus on cell type subclass, the possible classifications increased from 6 to 49. 
