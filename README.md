@@ -101,5 +101,5 @@ Interestingly, while the cell UMAP and confusion matrices differ the metrics for
 
 Acknowledgments:
 
-The Bowang lab: scGPT https://pubmed.ncbi.nlm.nih.gov/38409223/
-Single-cell RNA-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis: https://www.lungmap.net/omics/?experiment_id=LMEX0000004393
+- The Bowang lab: scGPT https://pubmed.ncbi.nlm.nih.gov/38409223/
+- Single-cell RNA-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis: https://www.lungmap.net/omics/?experiment_id=LMEX0000004393
