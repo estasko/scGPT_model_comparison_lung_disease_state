@@ -83,6 +83,8 @@ These data can further be analyzed to compare the model outputs for each annotat
 | Cell Name | Cell Subclassification | Disease Identity |
 |![human_umap_cell_name](https://github.com/user-attachments/assets/60650adc-4e34-46a4-a7b2-002eb2d76a22)|![human_umap_subclass](https://github.com/user-attachments/assets/67ff9255-dc70-4042-a22b-7528ea00f63b)|![cluster_human_disease_id](https://github.com/user-attachments/assets/f534f82d-4ebf-4495-ad6f-f41a2c7e6394)|
 
+Interestingly, while the cell culstering maps and confusion matrices differ the metrics for each data annotation are identical. 
+
 | scGPT whole human model | | ||
 |-------------------------|-------------------------|-------------------------|-------------------------|
 | Metric | Cell Name | Cell Subclassification | Disease Identity |
