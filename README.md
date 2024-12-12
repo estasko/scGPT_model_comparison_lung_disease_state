@@ -97,18 +97,5 @@ Interestingly, while the cell culstering maps and confusion matrices differ the 
 
 Acknowledgments:
 
-@article{cui2023scGPT,
-title={scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI},
-author={Cui, Haotian and Wang, Chloe and Maan, Hassaan and Pang, Kuan and Luo, Fengning and Wang, Bo},
-journal={bioRxiv},
-year={2023},
-publisher={Cold Spring Harbor Laboratory}
-}
-
-
-
-
-
-
-
-
+The Bowang lab: scGPT https://pubmed.ncbi.nlm.nih.gov/38409223/
+Single-cell RNA-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis: https://www.lungmap.net/omics/?experiment_id=LMEX0000004393
