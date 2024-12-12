@@ -1,4 +1,4 @@
-# Application of scGPT models to identify cell types in lung disease states
+# Application of scGPT to identify cell types in lung disease states
 ## Introduction
 
 Cell clustering is commonly used for cell type identification. This algorithm reduces the dimensionality of the scRNA-seq data and can be visualized as UMAP maps dividing cells based on type. Traditional methods include algorithms such as Seurat. This is widely accepted however can be less effective in identifying complex relationships between genes and thus identifying aberrant cell populations. This severely limits the application of cell clustering for studying disease state models. 
