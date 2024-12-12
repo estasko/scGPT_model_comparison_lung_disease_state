@@ -30,8 +30,8 @@ Both the whole human and lung scGPT models were successful in identifying cell t
 Shown below are the UMAP clusters of the whole human and lung model for the cell type annotation and eaulation shows a similar distributon of cell types / clustering. 
 
 | scGPT whole human model | scGPT lung model |
-| Cluster Map| |
 |-------------------------|-------------------------|
+| Cluster Map| |
 |![human_umap_cell_name](https://github.com/user-attachments/assets/e99714d0-3317-4b80-8657-0768af2870e0) |![lung_umap_cell_name](https://github.com/user-attachments/assets/123163bc-d3df-4328-8a7e-5e0e5f1f6635)|
 | Confusion Matrix | |
 |![confustion_matrix_lung_human_cell_name](https://github.com/user-attachments/assets/01844d15-9afa-4c1b-bec1-d2cd7779e7cc)|![confusion_lung_cell_name](https://github.com/user-attachments/assets/3328dcb2-75f6-4d3d-b0a1-32db75d0335f)|
