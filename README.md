@@ -9,6 +9,13 @@ Here, we compare the scGPT whole human model (pre-trained on 33 million cells) a
 
 We would further like to determine how specific cell identifiers impact the performance of the model. The data used can be downloaded from the ipfcellatlas.com (Kaminski/Rosas) and was configured into train and test files  using different cell classification and subclassification provided in the meta data to test the limits of each model. Further, we use these models to determine the disease state of each cell based on its gene expression. These files used in analysis were created using mxt_h5ad_file_conversion.py. 
 
+## Previous Works 
+
+The "single-cell rna-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis" paper uses UMAPs for analysis of their data, the figure below is one example. This script aims to improve upon the previous methods used for cell classification including the methods used to determine classification here. Ideally, using scGPT will allow for scRNA-seq data to be given to the model and its classification determined, without the requirement of the researchers to annotate these data themselves.
+
+![example image](https://github.com/user-attachments/assets/5d6f3f12-c044-4b27-be21-361d6066eff6)
+
+
 ## Methods
 *This script was derived from scGPT zero-shot reference mapping tutorial. Single Cell RNA sequencing data is analyzed from Kaminski et al. "Single-cell RNA-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis".*
 
@@ -101,5 +108,5 @@ Interestingly, while the cell UMAP and confusion matrices differ the metrics for
 
 Acknowledgments:
 
-- The Bowang lab: scGPT https://pubmed.ncbi.nlm.nih.gov/38409223/
-- Single-cell RNA-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis: https://www.lungmap.net/omics/?experiment_id=LMEX0000004393
+- bowang-lab. GitHub - bowang-lab/scGPT. GitHub. Published December 13, 2023. Accessed December 12, 2024. https://github.com/bowang-lab/scGPT
+- Adams TS, Schupp JC, Poli S, et al. Single-cell RNA-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis. Science Advances. 2020;6(28). doi:https://doi.org/10.1126/sciadv.aba1983
