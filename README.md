@@ -28,6 +28,7 @@ We would further like to determine how specific cell identifiers impact the perf
 Both the whole human and lung scGPT models were successful in identifying cell types. The most successful data set for both models was annotated with cell type. These annotations were less specific then the cell type subclass identity used and thus less relevant to the intended purpose of identifying abberant cell types. 
 
 Shown below are the UMAP clusters of the whole human and lung model for the cell type annotation and eaulation shows a similar distributon of cell types / clustering. 
+The confusion matrix again shows similar success for all cell types excluding Multiplet where the whole human model slightly outperformed the lung model.
 
 | scGPT whole human model | scGPT lung model |
 |-------------------------|-------------------------|
@@ -36,7 +37,14 @@ Shown below are the UMAP clusters of the whole human and lung model for the cell
 | Confusion Matrix | |
 |![confustion_matrix_lung_human_cell_name](https://github.com/user-attachments/assets/01844d15-9afa-4c1b-bec1-d2cd7779e7cc)|![confusion_lung_cell_name](https://github.com/user-attachments/assets/3328dcb2-75f6-4d3d-b0a1-32db75d0335f)|
 
-The confusion matrix again shows similar success for all cell types excluding Multiplet where the whole human model slightly outperformed the lung model. This is shown below. 
 
 
-When the annotations were further specified to focus on cell type subclass, the possible classifications increased from 6 to 49. 
+When the annotations were further specified to focus on cell type subclass, the possible classifications increased from 6 to 49. This makes interpretation of the cluster map difficult. As seen below the coloring is grey scale and time constraints did not allow for trouble shooting. However important information can be ascertained from the confusion matrices. Namely, again the whole human model did a better job overall identifying cell types this is concisely seen by the accuracy, precision, recall and macro f1 score of each type
+| Metric | scGPT whole human model | scGPT lung model|
+|-------------------------|-------------------------|-------------------------|
+|accuracy| 0.7433132010353753 | ?|
+|precision| 0.7306583316543472 | ?|
+|recall | 0.7250614699713483| ?|
+|macro f1| 0.7263983803368087 |?| 
+
+
