@@ -63,9 +63,9 @@ The confusion matrices for this test explicitly show the whole human model outpe
 
 | Metric | scGPT whole human model | scGPT lung model|
 |-------------------------|-------------------------|-------------------------|
-|accuracy| 0.0.7433132010353753, | 0.7127792157990605|
-|precision| 0.0.7306583316543472, | 0.6988279191653136|
-|recall | 0.0.7250614699713483,| 0.692754924917788|
+|accuracy| 0.0.7433132010353753 | 0.7127792157990605|
+|precision| 0.0.7306583316543472 | 0.6988279191653136|
+|recall | 0.0.7250614699713483| 0.692754924917788|
 |macro f1| 0.0.7263983803368087 |0.6941320833645248| 
 
 
@@ -73,6 +73,28 @@ The confusion matrices for this test explicitly show the whole human model outpe
 |Cluster Map|
 |![cluster_human_disease_id](https://github.com/user-attachments/assets/9f853b65-5f52-4e63-b124-dbfca5461d36)| ![cluster_lung_disease_id](https://github.com/user-attachments/assets/2d5a246c-248f-45c8-90ba-cede1412b844)|
 |![confusion_matrix_human_disease_id](https://github.com/user-attachments/assets/17f34970-e649-4aa1-a4fd-f1795305d2ea)| ![confusion_matrix_lung_disease_id](https://github.com/user-attachments/assets/497db3e1-9c04-43ba-9502-6edc67caa7d9)|
+
+
+
+These data can further be analyzed to compare the model outputs for each annotation choice to see how this impacted the clustering and accucary metrics of the model.
+| scGPT whole human model | | |
+|-------------------------|-------------------------|-------------------------|
+| Cell Name | Cell Subclassification | Disease Identity |
+|![human_umap_cell_name](https://github.com/user-attachments/assets/60650adc-4e34-46a4-a7b2-002eb2d76a22)|![human_umap_subclass](https://github.com/user-attachments/assets/67ff9255-dc70-4042-a22b-7528ea00f63b)|![cluster_human_disease_id](https://github.com/user-attachments/assets/f534f82d-4ebf-4495-ad6f-f41a2c7e6394)|
+
+| scGPT whole human model | | ||
+|-------------------------|-------------------------|-------------------------|-------------------------|
+| Metric | Cell Name | Cell Subclassification | Disease Identity |
+|accuracy| ?| 0.7433132010353753 |0.7433132010353753|
+|precision| ?| 0.7306583316543472 |0.0.0.7306583316543472|
+|recall | ?| 0.7250614699713483| 0.0.7250614699713483|
+|macro f1|?|  0.7263983803368087| 0.0.7263983803368087|
+
+
+
+
+
+
 
 
 
