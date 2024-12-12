@@ -47,4 +47,10 @@ When the annotations were further specified to focus on cell type subclass, the 
 |recall | 0.7250614699713483| ?|
 |macro f1| 0.7263983803368087 |?| 
 
+|scGPT whole human model | scGPT lung model|
+|-------------------------|-------------------------|
+| Confusion Matrix|
+| ![confustion_matrix_lung_human_cell_name](https://github.com/user-attachments/assets/9e460c99-771a-4e31-97cd-fd12a0a22abe) | ![confusion_lung_cell_name](https://github.com/user-attachments/assets/65097a75-6a4f-4ba8-8b95-196429093486) |
+
+
 
