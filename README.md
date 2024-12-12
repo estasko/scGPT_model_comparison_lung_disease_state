@@ -1,4 +1,4 @@
-# scGPT_model_comparison_lung_disease_state
+# scGPT model comparison lung disease state
 ## Introduction
 
 Cell clustering is commonly used for cell type identificaion. This algoritm reduces the dimensionality of the scRNA-seq data and can be visualized as culster maps dividing cells based on type. Traditional methods include algorithms such as seruat. This is widelt accepted however can be less effective in identifying complex relationships between genes and thus identifying aberant cell populations. This severly limits the application of cell culstering for studying disease state models. 
@@ -7,8 +7,7 @@ To combat this, a new machine learning model, scGPT, has been developed by the B
 
 Here, we compare the scGPT whole human model (pre-trained on 33 million cells) and lung model (pre-trained on 2.1 million cells). We aim to determine whether a generalized model or task specific model best identifies aberrant cell populations in IPF, COPD and control lung cell samples.
 
-We would further like to determine how specific cell identifiers impact the performance of the model. The data file provided includes train and test file of the same dataset using different levels of cell classification and subclassification to test the limits of each model. Further, we use these models to determine the disease state of each cell based on its gene expression.
-
+We would further like to determine how specific cell identifiers impact the performance of the model. The data used can be downloaded from the ipfcellatlas.com (Kaminski/Rosas) and was configured into train and test files  using different cell classification and subclassification provided in the meta data to test the limits of each model. Further, we use these models to determine the disease state of each cell based on its gene expression. These files used in analysis were created using mxt_h5ad_file_conversion.py. 
 
 ## Methods
 *This script was derived from scGPT zero-shot reference mapping tutorial. Single Cell RNA sequencing data is analyzed from Kaminski et al. "Single-cell RNA-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis".*
@@ -96,6 +95,15 @@ Interestingly, while the cell culstering maps and confusion matrices differ the 
 
 
 
+Acknowledgments:
+
+@article{cui2023scGPT,
+title={scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI},
+author={Cui, Haotian and Wang, Chloe and Maan, Hassaan and Pang, Kuan and Luo, Fengning and Wang, Bo},
+journal={bioRxiv},
+year={2023},
+publisher={Cold Spring Harbor Laboratory}
+}
 
 
 
